@@ -166,9 +166,11 @@ wtt = {
 
 'green': 'red',
 
-'sweaty': 'sweety'
+'sweaty': 'sweety',
 
-'barn': 'bagel'
+'barn': 'bagel',
+
+'hello': 'hewwo'
 }
 
 
