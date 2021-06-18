@@ -9,7 +9,7 @@ wtt = {
 
 
 'feminine': 'fweminit',
-
+  
 'english': 'ing-wish',
 
 '100': 'a-hedrid',
@@ -86,7 +86,11 @@ wtt = {
 
 'fucker': 'sunner',
 
+'fucking': 'sunning',
+
 'motherfucker': 'mothersunner',
+
+'motherfucking': 'mothersunning',
 
 'god': 'sun',
 
@@ -177,3 +181,12 @@ wtt = {
 
 list = wtt.keys()
 
+ecode = '''
+
+if sentance[word][len(sentance[word])-1] in ['r', 'd'] and sentance[word][len(sentance[word])-2] == 'e':
+    tempWord = ''
+    for i in range(len(sentance[word])-2):
+        tempWord += sentance[word][i]
+    sentance[word] = tempWord
+
+'''
