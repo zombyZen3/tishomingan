@@ -7,7 +7,6 @@
 wtt = {
 
 
-
 'feminine': 'fweminit',
   
 'english': 'ing-wish',
@@ -76,48 +75,6 @@ wtt = {
 
 'ha': 'eh',
 
-
-
-
-
-
-
-'fuck': 'sun',
-
-'fucker': 'sunner',
-
-'fucking': 'sunning',
-
-'motherfucker': 'mothersunner',
-
-'motherfucking': 'mothersunning',
-
-'god': 'sun',
-
-'bullshit': '*BEEEP*',
-
-'shit': '*BEEEP*',
-
-'bitch': '*BEEEP*',
-
-'prick': '*BEEEP*',
-
-'pussy': '*BEEEP*',
-
-'cock': '*BEEEP*',
-
-'dickhead': '*BEEEP*',
-
-'dick': '*BEEEP*',
-
-
-
-
-
-
-
-'steal': 'stue',
-
 'chromebook': 'google doc bookshelf status bar',
 
 'shelf': 'bookshelf',
@@ -174,19 +131,74 @@ wtt = {
 
 'barn': 'bagel',
 
-'hello': 'hewwo'
+'hello': 'hewwo',
+
+
+
+
+'fuck': 'sun',
+
+'fucker': 'sunner',
+
+'fucking': 'sunning',
+
+'motherfucker': 'mothersunner',
+
+'motherfucking': 'mothersunning',
+
+'god': 'sun',
+
+'bullshit': '*BEEEP*',
+
+'shit': '*BEEEP*',
+
+'bitch': '*BEEEP*',
+
+'prick': '*BEEEP*',
+
+'pussy': '*BEEEP*',
+
+'cock': '*BEEEP*',
+
+'dickhead': '*BEEEP*',
+
+'dick': '*BEEEP*',
+
+'steal': 'stue',
+
+
+
+'wtf': 'what the sun',
+
+'omg': 'oh my sun',
+
+'th': 'the sun',
+
+'wth': 'what the sun',
+
+'tf': 'the sun',
+
+'stfu': 'shut the sun up',
+
+'lmao': 'laughing my *BEEEP* off',
+
+'lmfao': 'laughing my sunning *BEEEP* off'
+
 }
-
-
 
 list = wtt.keys()
 
+
+
+
 ecode = '''
+
 
 if sentance[word][len(sentance[word])-1] in ['r', 'd'] and sentance[word][len(sentance[word])-2] == 'e':
     tempWord = ''
     for i in range(len(sentance[word])-2):
         tempWord += sentance[word][i]
     sentance[word] = tempWord
+
 
 '''
